@@ -4,7 +4,7 @@ import S from "./style";
 import { ReactComponent as DownArrowIcon } from './downarrrow_btn.svg';
 import { ReactComponent as RightArrowIcon } from './R-arrow.svg';
 import { ReactComponent as LeftArrowIcon } from './L-arrow.svg';
-
+import PropTypes from 'prop-types';
 /**
  * 운영원칙 위반 안내 내역 컴포넌트
  * @param {Object} props 컴포넌트 props
@@ -154,6 +154,19 @@ const LimitationLog = ({
             </S.Card>
         </S.Container>
     );
+};
+
+LimitationLog.propTypes = {
+    badwordLogs: PropTypes.arrayOf(PropTypes.shape({
+        originalWord: PropTypes.string.isRequired,
+        filteredWord: PropTypes.string.isRequired,
+        createdAt: PropTypes.string.isRequired,
+    })).isRequired,
+    startDate: PropTypes.string.isRequired,
+    endDate: PropTypes.string.isRequired,
+    isActive: PropTypes.bool.isRequired,
+    formatDate: PropTypes.func.isRequired,
+    formatTime: PropTypes.func.isRequired,
 };
 
 export default LimitationLog;
