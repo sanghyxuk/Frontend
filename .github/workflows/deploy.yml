@@ -21,7 +21,7 @@ jobs:
     - name: Deploy to EC2
       run: |
         ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.EC2_SSH_IP }} << EOF
-          cd /home/ubuntu/aws_chat || exit
+          cd /home/ubuntu/Frontend || exit
           git pull origin main
           ./deploy.sh
         EOF
