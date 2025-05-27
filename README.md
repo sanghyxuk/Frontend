@@ -89,7 +89,6 @@ UI 효과: fullPage.js (GPLv3 조건하 사용), GSAP 일부 활용 가능
 
 사용자 키 발급 및 관리
 
-섹션별 scroll-snap 기반 자연스러운 페이지 이동
 
 # 🧼 Purgo: AI Profanity Filtering Web App
 
@@ -101,6 +100,7 @@ Purgo는 사용자 게시글 및 댓글의 욕설을 감지하고 정제된 언�
 This project is licensed under the **GNU General Public License v3.0**.
 
 - 자유롭게 소스코드를 사용할 수 있으며, 수정 및 배포도 가능합니다.
+- Purgo는 수익을 창출하지 않는 비영리 목적의 오픈소스 프로젝트입니다.
 - 단, 이 소스를 이용한 파생 프로젝트도 **동일한 GPLv3 조건**을 따라야 합니다.
 - 자세한 내용은 [LICENSE](./LICENSE) 파일을 참고하세요.
 
