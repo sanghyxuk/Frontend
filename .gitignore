@@ -9,8 +9,8 @@
 /coverage
 
 # production
-/build
 .idea
+/build
 # misc
 .DS_Store
 .env
